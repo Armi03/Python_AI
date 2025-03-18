@@ -2,13 +2,6 @@ age = int(input("Enter your age: "))
 ask_nationality = input("Do you want to enter your nationality? (yes/no): ").strip().lower()  
 
 if age < 18:  
-    if ask_nationality == "yes":  
-        print("You are a minor and not eligible for nationality.")  
-    else:  
-        print("You are a minor.")  
+    print("You are a minor." + (" and not eligible for nationality." if ask_nationality == "yes" else ""))  
 else:  
-    if ask_nationality == "yes":  
-        nationality = input("Enter your nationality: ")  
-        print("You are eligible to cast a vote.")  
-    else:  
-        print("You chose not to enter nationality.")  
+    print("You are eligible to cast a vote." if ask_nationality == "yes" and input("Enter your nationality: ") else "You chose not to enter nationality.")  
