@@ -1,4 +1,5 @@
 import numpy as np
+from numpy.ma.core import reshape
 
 a = np.array([[[1,2],[3,4]]])
 b = np.array([[[5,6],[7,8]]])
@@ -50,3 +51,8 @@ print(Tan)
 #sort
 Sort = np.sort(a)
 print(Sort)
+
+n = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+n1 = np.reshape(n,(3,4))
+rows,cols = n1.shape
+print(rows,cols)
