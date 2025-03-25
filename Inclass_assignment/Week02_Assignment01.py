@@ -56,3 +56,9 @@ n = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
 n1 = np.reshape(n,(3,4))
 rows,cols = n1.shape
 print(rows,cols)
+
+
+Row1 = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+Row2 = Row1.reshape(4,3)
+print(Row2)
+print(Row2[:,0])
